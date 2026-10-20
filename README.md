@@ -7,7 +7,7 @@ A two-stage recognition system for 73 real-world objects. Given a photo of one o
 | Single-object classification | EfficientNetB0 (transfer learning) | **94.17% accuracy**, macro F1 0.941 |
 | Multi-object detection | YOLOv8s (COCO-pretrained, fine-tuned) | **mAP50 0.806**, mAP50-95 0.765, 12.4 ms/image |
 
-![Detection on a 5x5 test grid](/home/varun/Documents/projects/Vision-Training/5x5_testimage.png)
+![Detection on a 5x5 test grid](images/5x5_testimage.png)
 <!-- Add a prediction image from runs/yolov8s_grid_test_predictions/ to objectdetection/assets/ -->
 
 **Highlights**
@@ -93,7 +93,7 @@ YOLOv8s was fine-tuned from COCO weights by replacing the 80-class head with a 7
 
 Validation and test scores are within 0.02, so the model is not overfit to the validation set. The small gap between mAP50 and mAP50-95 (0.04) shows the boxes are tight once an object is found.
 
-![Training curves](/home/varun/Documents/projects/Vision-Training/resultcurves.png)
+![Training curves](images/resultcurves.png)
 <!-- Add results.png from runs/yolov8s_grid/ -->
 
 ---
